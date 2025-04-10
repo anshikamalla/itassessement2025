@@ -206,11 +206,13 @@ body{
 
 .home{
     min-height: 100vh;
+    justify-content: left;
     display: flex;
     align-items: center;
     background: url(img21.jpeg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
+    text-align: center;
 }
 
 .home .content{
@@ -224,6 +226,8 @@ body{
 }
 
 .home .content p{
+
+    justify-content: left;
     font-size: 2rem;
     font-weight: lighter;
     line-height: 1.8;
