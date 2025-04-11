@@ -9,14 +9,14 @@
 </head>
 <body>
     <header class="header">
-        <a href="https://himalayanjava.com/" class="logo">
+        <a href="https://himalayanjava.com/" TARGET="_blank" class="logo">
             <img src="logo.png" alt="">
         </a>
 
         <nav class="navbar">
             <a href="index.html">home</a>
             <a href="about.html">about</a>
-            <a href="menu.html">menu</a>
+            <a href="gallery.html">gallery</a>
             <a href="products.html">products</a>
             <a href="review.html">review</a>
             <a href="contact.html">contact</a>
@@ -26,7 +26,7 @@
         <div class="icons">
             <div class="fas fa-search" id="search-btn"></div>
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-bars" id="gallery-btn"></div>
         </div>
 
         <div class="search-form">
@@ -77,10 +77,41 @@
 
         <h1 class="heading"><span>contact </span> us</h1>
 
+        <!-- Added contact info section -->
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="content">
+                    <h3>email us</h3>
+                    <p><a href="mailto:info@himalayanjava.com">info@himalayanjava.com</a></p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>call us</h3>
+                    <p><a href="tel:+9779841234567">+977 9841234567</a></p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="content">
+                    <h3>opening hours</h3>
+                    <p>7:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
 
             <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28263.45444454!2d85.16927754999999!3d27.694829199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190055cb1c65%3A0xaa19fe246afeccbe!2sHimalayan%20Java%20Coffee%2C%20Babarmahal!5e0!3m2!1sen!2s!4v1712329354791!5m2!1sen!2s" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28263.45444454!2d85.16927754999999!3d27.694829199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190055cb1c65%3A0xaa19fe246afeccbe!2sHimalayan%20Java%20Coffee%2C%20Babarmahal!5e0!3m2!1sen!2s!4v1712329354791!5m2!1sen!2s" TARGET="_blank" 
             width="600" 
             height="450" 
             style="border:0;" 
@@ -103,6 +134,10 @@
                     <span class="fas fa-phone"></span>
                     <input type="number" placeholder="number">
                 </div>
+                <div class="inputBox">
+                    <span class="fas fa-comment"></span>
+                    <textarea placeholder="your message"></textarea>
+                </div>
                 <input type="submit" value="contact now" class="btn">
             </form>
 
@@ -112,21 +147,27 @@
     <section class="footer">
 
         <div class="share">
-            <a href="https://www.facebook.com/himalayanjavanewbaneshwor/" class="fab fa-facebook"></a>
-            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhimalayan_java" class="fab fa-twitter"></a>
-            <a href="https://www.instagram.com/himalayanjava/" class="fab fa-instagram"></a>
-            <a href="https://www.linkedin.com/company/himalayan-java-coffee" class="fab fa-linkedin"></a>
-            <a href="https://www.pinterest.com/pin/1129277675293629331/" class="fab fa-pinterest"></a>
+            <a href="https://www.facebook.com/himalayanjavanewbaneshwor/" TARGET="_blank" class="fab fa-facebook"></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhimalayan_java"  TARGET="_blank"class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/himalayanjava/" TARGET="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/company/himalayan-java-coffee" TARGET="_blank" class="fab fa-linkedin"></a>
+            <a href="https://www.pinterest.com/pin/1129277675293629331/" TARGET="_blank" class="fab fa-pinterest"></a>
         </div>
 
         <div class="links">
             <a href="home.html">home</a>
             <a href="about.html">about</a>
-            <a href="menu.html">menu</a>
+            <a href="gallery.html">gallery</a>
             <a href="products.html">products</a>
             <a href="review.html">review</a>
             <a href="contact.html">contact</a>
             <a href="blogs.html">blogs</a>
+        </div>
+
+        <!-- Added contact info to footer -->
+        <div class="footer-contact-info">
+            <p><i class="fas fa-envelope"></i> info@himalayanjava.com</p>
+            <p><i class="fas fa-phone"></i> +977 9841234567</p>
         </div>
 
         <div class="credit">
@@ -134,5 +175,6 @@
         </div>
 
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
